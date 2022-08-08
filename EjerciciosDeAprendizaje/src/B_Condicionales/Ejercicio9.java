@@ -27,7 +27,7 @@ public class Ejercicio9 {
         System.out.println("Ingrese una frase o palabra que comience con la letra A");
         String palabra = leer.nextLine();
         
-        if ((palabra.substring(0,1)).equals("A")  ) {
+        if ((palabra.substring(0,1)).equalsIgnoreCase("A")  ) {
             
             System.out.println("CORRECTO");
             

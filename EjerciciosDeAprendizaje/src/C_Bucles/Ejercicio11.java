@@ -26,9 +26,9 @@ public class Ejercicio11 {
             directamente, se debe mostrar el siguiente mensaje de confirmación: ¿Está seguro que
             desea salir del programa (S/N)? Si el usuario selecciona el carácter ‘S’ se sale del
             programa, caso contrario se vuelve a mostrar el menú. */
-        
+
         Scanner leer = new Scanner(System.in);
-        
+
         System.out.println("Ingrese el primer número: ");
         int num1 = leer.nextInt();
 
@@ -48,38 +48,42 @@ public class Ejercicio11 {
             System.out.println("Elija la opción deseada: ");
 
             int opcion = leer.nextInt();
-            
+
             switch (opcion) {
 
-                case 1 :
+                case 1:
 
                     int suma = num1 + num2;
                     System.out.println("La suma de los 2 números es de: " + suma);
                     break;
-                    
-                case 2 :
-                    
+
+                case 2:
+
                     int resta = num1 - num2;
                     System.out.println("La resta de los 2 números es de: " + resta);
                     break;
-                    
-                case 3 : 
-                    
+
+                case 3:
+
                     int multi = num1 * num2;
                     System.out.println("La multiplicación de los 2 números es de: " + multi);
                     break;
-                    
-                case 4 :
-                    
-                    double divid =  num1 / num2 ; 
+
+                case 4:
+
+                    double divid = (double) num1 / num2;
                     System.out.println("La división de los 2 números es de: " + divid);
                     break;
-                    
-                case 5 :
-                    
+
+                case 5:
+
                     System.out.println("¿Desea continuar? (y/n) ");
                     cont = leer.next();
-                    
+
+                default:
+
+                    System.out.println("Ingrese un valor válido.");
+
             }
 
         }
