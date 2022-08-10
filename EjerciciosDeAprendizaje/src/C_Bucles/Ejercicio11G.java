@@ -77,14 +77,14 @@ public class Ejercicio11G {
 
                 case 4:
 
-                    float divi = (float) num1 / num2;
+                    double divi = (double) num1 / num2;
                     System.out.println("La división de " + num1 + " y " + num2 + " es de : " + divi);
                     break;
 
                 case 5:
 
                     System.out.println("Desea continuar con la operación? (s/n)");
-                    continuar = leer.next();
+                     continuar = leer.next();
                     break;
                     
                 default :
