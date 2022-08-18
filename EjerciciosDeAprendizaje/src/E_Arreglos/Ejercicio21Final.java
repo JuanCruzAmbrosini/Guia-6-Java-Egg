@@ -23,21 +23,21 @@ public class Ejercicio21Final {
         
         Scanner leer = new Scanner(System.in);
 
-        int[][] matrizM = new int[5][5];
+        int[][] matrizM = new int[10][10];
         int[][] matrizP = new int[3][3];
 
         matrizP = llenadoMatrizCuadrada(matrizP, 3);
-        matrizM = llenadoMatrizCuadrada(matrizM, 5);
+        matrizM = llenadoMatrizCuadrada(matrizM, 10);
 
         System.out.println("======================================");
 
         System.out.println("Matriz M: ");
-        mostrarMatrizCuadrada(matrizM, 5);
+        mostrarMatrizCuadrada(matrizM, 10);
         System.out.println("======================================");
         System.out.println("Matriz P: ");
         mostrarMatrizCuadrada(matrizP, 3);
         System.out.println("======================================");
-        boolean contiene = comprobador(matrizM, matrizP, 5, 3);
+        boolean contiene = comprobador(matrizM, matrizP, 10, 3);
         System.out.println(contiene);
         
     }
